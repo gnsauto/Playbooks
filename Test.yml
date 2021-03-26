@@ -1,0 +1,7 @@
+---
+- name: show 
+  ios_command:
+     commands: 
+        - show clock
+  when: ansible_network_os == "ios"   
+  register: playbookerror
